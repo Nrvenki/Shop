@@ -12,7 +12,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://shop-3fje.onrender.com' // Add your hosted frontend URL
+    'https://shop-3fje.onrender.com', // Add your hosted frontend URL
+    'https://dressshops.netlify.app/'
   ],
   credentials: true
 }));
