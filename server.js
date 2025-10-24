@@ -9,7 +9,13 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://shop-3fje.onrender.com' // Add your hosted frontend URL
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Serve uploaded images
