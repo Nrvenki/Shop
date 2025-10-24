@@ -11,7 +11,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:3001',
     'https://dressshops.netlify.app',  // ✅ Your Netlify URL
-    'https://*.netlify.app'  // All Netlify preview URLs
+     // All Netlify preview URLs
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
